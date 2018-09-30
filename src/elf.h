@@ -132,7 +132,7 @@ typedef struct
 #define EI_VERSION	6		/* File version byte index */
 					/* Value must be EV_CURRENT */
 
-#define EI_OSABI	7		/* OS ABI identification */
+#define EI_OSABI	        7		/* OS ABI identification */
 #define ELFOSABI_NONE		0	/* UNIX System V ABI */
 #define ELFOSABI_SYSV		0	/* Alias.  */
 #define ELFOSABI_HPUX		1	/* HP-UX */
@@ -674,20 +674,20 @@ typedef struct
 /* DT_* entries which fall between DT_VALRNGHI & DT_VALRNGLO use the
    Dyn.d_un.d_val field of the Elf*_Dyn structure.  This follows Sun's
    approach.  */
-#define DT_VALRNGLO	0x6ffffd00
-#define DT_GNU_PRELINKED 0x6ffffdf5	/* Prelinking timestamp */
-#define DT_GNU_CONFLICTSZ 0x6ffffdf6	/* Size of conflict section */
-#define DT_GNU_LIBLISTSZ 0x6ffffdf7	/* Size of library list */
-#define DT_CHECKSUM	0x6ffffdf8
-#define DT_PLTPADSZ	0x6ffffdf9
-#define DT_MOVEENT	0x6ffffdfa
-#define DT_MOVESZ	0x6ffffdfb
-#define DT_FEATURE_1	0x6ffffdfc	/* Feature selection (DTF_*).  */
-#define DT_POSFLAG_1	0x6ffffdfd	/* Flags for DT_* entries, effecting
+#define DT_VALRNGLO	   0x6ffffd00
+#define DT_GNU_PRELINKED   0x6ffffdf5	/* Prelinking timestamp */
+#define DT_GNU_CONFLICTSZ  0x6ffffdf6	/* Size of conflict section */
+#define DT_GNU_LIBLISTSZ   0x6ffffdf7	/* Size of library list */
+#define DT_CHECKSUM	   0x6ffffdf8
+#define DT_PLTPADSZ	   0x6ffffdf9
+#define DT_MOVEENT	   0x6ffffdfa
+#define DT_MOVESZ	   0x6ffffdfb
+#define DT_FEATURE_1	   0x6ffffdfc	/* Feature selection (DTF_*).  */
+#define DT_POSFLAG_1	   0x6ffffdfd	/* Flags for DT_* entries, effecting
 					   the following DT_* entry.  */
-#define DT_SYMINSZ	0x6ffffdfe	/* Size of syminfo table (in bytes) */
-#define DT_SYMINENT	0x6ffffdff	/* Entry size of syminfo */
-#define DT_VALRNGHI	0x6ffffdff
+#define DT_SYMINSZ	   0x6ffffdfe	/* Size of syminfo table (in bytes) */
+#define DT_SYMINENT	   0x6ffffdff	/* Entry size of syminfo */
+#define DT_VALRNGHI	   0x6ffffdff
 #define DT_VALTAGIDX(tag)	(DT_VALRNGHI - (tag))	/* Reverse order! */
 #define DT_VALNUM 12
 
